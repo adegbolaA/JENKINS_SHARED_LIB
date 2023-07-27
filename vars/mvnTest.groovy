@@ -1,3 +1,6 @@
 def call(){
-    sh 'mvn test'
+     dir('ChallengePackage/demo') {
+                    // Execute 'mvn test' command
+       sh 'mvn test'
+    }
 }
