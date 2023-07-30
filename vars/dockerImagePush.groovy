@@ -8,9 +8,10 @@ def call(String project, String ImageTag, String dockerHubUser){
                 sh "docker login -u '$USER' -p '$PASS'"
             }
   
-       
+        sh "docker version"
         sh "docker image push  ${dockerHubUser}/${project}:${ImageTag}" 
         sh "docker image push ${dockerHubUser}/${project}:latest"
+        sh "docker image list"
     
 }
 
