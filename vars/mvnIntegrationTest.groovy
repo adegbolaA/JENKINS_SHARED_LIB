@@ -1,5 +1,5 @@
 def call(){
-    dir('ChallengePackage/demo') {
+    dir('ChallengePackage/devops-project') {
         sh 'mvn verify -DskipUnitTests'
     }
 }

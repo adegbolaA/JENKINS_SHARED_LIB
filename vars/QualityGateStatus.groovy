@@ -1,5 +1,5 @@
 def call(credentialsId){
-    dir('ChallengePackage/demo') {
+    dir('ChallengePackage/devops-project') {
         waitForQualityGate abortPipeline: false, credentialsId: credentialsId
     }
 }
