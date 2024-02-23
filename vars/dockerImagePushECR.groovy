@@ -8,6 +8,7 @@ def call(String aws_account_id, String region, String ecr_repoName){
 
     // Check if AWS CLI and Docker are installed
     sh "which aws && which docker"
+    sh "aws --version"
     
     // Login to ECR and push the Docker image
     sh """
